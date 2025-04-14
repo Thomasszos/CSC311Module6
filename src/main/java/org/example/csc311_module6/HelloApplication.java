@@ -28,6 +28,14 @@ public class HelloApplication extends Application {
         scene.setRoot(loadFXML(fxml));
     }
 
+    /**
+     * Used this for javadoc as it was one of the few non-voids.
+     * loads the fxml to be used by setroot.
+     * @param fxml The name of the fxml file without .fxml
+     * @return the loaded fxml
+     * @throws IOException
+     */
+
     private static Parent loadFXML(String fxml) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource(fxml + ".fxml"));
 
